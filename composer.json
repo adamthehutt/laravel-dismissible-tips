@@ -1,0 +1,30 @@
+{
+  "name": "adamthehutt/laravel-dismissible-tips",
+  "description": "Inline help boxes that can be dismissed and permanently ignored",
+  "type": "library",
+  "require": {
+    "php": ">=7.0",
+    "laravel/framework": "^5.8"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adam Huttler",
+      "email": "adam.huttler@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "AdamTheHutt\\LaravelDismissibleTips\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AdamTheHutt\\LaravelDismissibleTips\\LaravelDismissibleTipsServiceProvider"
+      ]
+    }
+  }
+}

@@ -15,7 +15,7 @@ class DismissibleTips extends Migration
     public function up()
     {
         Schema::create('dismissed_tips', function (Blueprint $table) {
-            $table->bigIncrements('id')->unsigned()->primary();
+            $table->bigIncrements('id')->unsigned();
             $table->bigInteger('user_id')->unsigned();
             $table->string('tip', 255);
             $table->timestamps();

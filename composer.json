@@ -1,6 +1,6 @@
 {
   "name": "adamthehutt/laravel-dismissible-tips",
-  "description": "Inline help boxes that can be dismissed and permanently ignored",
+  "description": "In-context help boxes that can be dismissed and permanently ignored by your users",
   "type": "library",
   "require": {
     "php": ">=7.0",

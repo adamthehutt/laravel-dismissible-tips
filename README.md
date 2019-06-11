@@ -1,4 +1,4 @@
-### Laravel Dismissible Tips
+## Laravel Dismissible Tips
 This package allows you to present users with in-context helpful tips that can 
 be dismissed once or permanently.
 
@@ -13,6 +13,11 @@ Then publish assets and other configuration:
 ``` bash
 php artisan vendor:publish
 ``` 
+
+Run migrations:
+``` bash
+php artisan migrate
+```
 
 Make sure to include the relevant css and js files. You can either incorporate 
 them into your existing asset pipeline or reference them directly as:

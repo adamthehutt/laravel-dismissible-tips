@@ -14,6 +14,13 @@ Then publish assets and other configuration:
 php artisan vendor:publish
 ``` 
 
+Make sure to include the relevant css and js files. You can either incorporate 
+them into your existing asset pipeline or reference them directly as:
+```html
+<link rel="stylesheet" href="/vendor/dismissible-tips/tips.css"/>
+<script src="/vendor/dismissible-tips/tips.js"></script>
+```
+
 #### Configuration
 
 Tips are defined in lang files, e.g., 

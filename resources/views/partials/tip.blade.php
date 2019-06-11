@@ -11,6 +11,6 @@
         </div>
     </div>
 </div>
-<a class="tipDismiss" data-tip="{{$tip}}" href="#">Don't show this tip again.</a>
+<a class="dismiss-tip" data-tip="{{$tip}}" href="#">Don't show this tip again.</a>
 
 @endif

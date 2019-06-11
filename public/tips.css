@@ -1,0 +1,8 @@
+.dismiss-tip {
+    margin: 1em 0;
+    display: block;
+}
+
+.alert + .dismiss-tip {
+    display: none;
+}

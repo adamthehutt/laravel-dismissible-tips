@@ -26,6 +26,15 @@ them into your existing asset pipeline or reference them directly as:
 <script src="/vendor/dismissible-tips/tips.js"></script>
 ```
 
+#### Icon Library
+
+By default, the dismissible tips assume access to [Font Awesome](https://fontawesome.com/) (version 5.9) for icons. If you're already 
+using Font Awesome in your application, then there's nothing else to do. If not, then you have two choices:
+
+ * Install Font Awesome in your layout (free and quick)
+ * Use a different icon library, in which case you will need to customize the blade templates accordingly
+
+
 #### Configuration
 
 Tips are defined in lang files, e.g., 

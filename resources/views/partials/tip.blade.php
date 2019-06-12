@@ -4,10 +4,10 @@
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <div class="row vertical-align">
         <div class="col-xs-1 text-right">
-            <i class="fa fa-info-circle fa-2x"></i>
+            <i class="fas fa-info-circle fa-2x"></i>
         </div>
         <div class="col-xs-10">
-            {{ __("dismissible-tips::tips.$tip") }} @if ($link)&nbsp;&nbsp;<a href="{!! $link !!}"><i class="fa fa-arrow-circle-right"></i></a> @endif
+            {{ __("dismissible-tips::tips.$tip") }} @if ($link)&nbsp;&nbsp;<a href="{!! $link !!}"><i class="fas fa-arrow-circle-right"></i></a> @endif
         </div>
     </div>
 </div>

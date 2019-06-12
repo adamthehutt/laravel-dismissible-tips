@@ -7,7 +7,7 @@
             <i class="fas fa-info-circle fa-2x"></i>
         </div>
         <div class="col-xs-10">
-            {{ __("dismissible-tips::tips.$tip") }} @if ($link)&nbsp;&nbsp;<a href="{!! $link !!}"><i class="fas fa-arrow-circle-right"></i></a> @endif
+            {{ __("dismissible-tips::tips.$tip") }} @isset($link)&nbsp;&nbsp;<a href="{!! $link !!}"><i class="fas fa-arrow-circle-right"></i></a> @endisset
         </div>
     </div>
 </div>

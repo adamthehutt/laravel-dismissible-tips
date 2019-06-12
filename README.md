@@ -59,12 +59,12 @@ The code above would create a new tip identified as `zappa.wisdom.snow`.
 
 To use the above tip in a blade template:
 ```blade
-@tip('tip' => 'zappa.wisdom.snow')
+@tip(['tip' => 'zappa.wisdom.snow'])
 ```
 
 To add an optional link after the tip:
 ```blade
-@tip('tip' => 'zappa.wisdom.snow', 'link' => 'https://example.com/foo/bar')
+@tip(['tip' => 'zappa.wisdom.snow', 'link' => 'https://example.com/foo/bar'])
 ```
 
 #### Customization

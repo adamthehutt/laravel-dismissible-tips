@@ -35,18 +35,18 @@ class LaravelDismissibleTipsServiceProvider extends ServiceProvider
     {
         $this->publishes([
                 __DIR__.'/../public' => public_path('vendor/dismissible-tips')
-            ], 'assets');
+            ], 'dismissible-tip-assets');
 
         $this->publishes([
                 __DIR__.'/../resources/lang' => resource_path('lang/vendor/dismissible-tips'),
-            ], 'lang');
+            ], 'dismissible-tip-lang');
 
         $this->publishes([
                 __DIR__.'/../resources/views/partials' => resource_path('views/vendor/dismissible-tips/partials'),
-            ], 'views');
+            ], 'dismissible-tip-views');
 
         $this->publishes([
                 __DIR__.'/../database/migrations' => database_path('migrations'),
-            ], 'migrations');
+            ], 'dismissible-tip-migrations');
     }
 }

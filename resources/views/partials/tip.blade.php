@@ -1,5 +1,4 @@
-@if (!\AdamTheHutt\LaravelDismissibleTips\DismissedTip::where('user_id', $_user->id)->where('tip', $tip)->exists())
-
+@if (!Auth::check() || !\AdamTheHutt\LaravelDismissibleTips\DismissedTip::whereUserId(Auth::id())->whereTip($tip)->exists())
 <div class="alert alert-info alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <div class="row vertical-align">
@@ -11,6 +10,7 @@
         </div>
     </div>
 </div>
+@auth
 <a class="dismiss-tip" data-tip="{{$tip}}" href="#">Don't show this tip again.</a>
-
+@endauth
 @endif

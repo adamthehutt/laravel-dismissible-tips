@@ -19,6 +19,7 @@ class LaravelDismissibleTipsServiceProvider extends ServiceProvider
             $this->registerPublishing();
         }
 
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutesFrom(__DIR__.'/../routes/ajax.php');
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'dismissible-tips');
         $this->loadViewsFrom(__DIR__.'/../resources/views/partials', 'dismissible-tips');
@@ -44,9 +45,5 @@ class LaravelDismissibleTipsServiceProvider extends ServiceProvider
         $this->publishes([
                 __DIR__.'/../resources/views/partials' => resource_path('views/vendor/dismissible-tips/partials'),
             ], 'dismissible-tip-views');
-
-        $this->publishes([
-                __DIR__.'/../database/migrations' => database_path('migrations'),
-            ], 'dismissible-tip-migrations');
     }
 }

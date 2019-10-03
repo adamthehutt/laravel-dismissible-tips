@@ -1,11 +1,11 @@
 @if (!Auth::check() || !\AdamTheHutt\LaravelDismissibleTips\DismissedTip::whereUserId(Auth::id())->whereTip($tip)->exists())
 <div class="alert alert-info alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <div class="row vertical-align">
-        <div class="col-xs-1 text-right">
+    <div class="row">
+        <div class="col-1 text-center">
             <i class="fas fa-info-circle fa-2x"></i>
         </div>
-        <div class="col-xs-10">
+        <div class="col-11">
             @if (\Illuminate\Support\Facades\Lang::has($tip))
                 @lang($tip)
             @else

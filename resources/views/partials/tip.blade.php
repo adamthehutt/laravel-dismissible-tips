@@ -2,10 +2,10 @@
 <div class="alert alert-info alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <div class="row">
-        <div class="col-1 text-center">
+        <div class="col-2 col-lg-1 text-right">
             <i class="fas fa-info-circle fa-2x"></i>
         </div>
-        <div class="col-11">
+        <div class="col-10 col-lg-11">
             @if (\Illuminate\Support\Facades\Lang::has($tip))
                 @lang($tip)
             @else
